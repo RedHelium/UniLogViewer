@@ -1,0 +1,269 @@
+/* Material Design Dark Theme */
+
+/* Основные цвета и фон */
+QMainWindow {
+    background-color: #1A1A1A;
+    color: rgba(255, 255, 255, 0.87);
+}
+
+/* Табы */
+QTabWidget::pane {
+    border: none;
+    background-color: #1A1A1A;
+}
+
+QTabBar::tab {
+    background-color: #2A2A2A;
+    color: rgba(255, 255, 255, 0.8);
+    padding: 8px 24px;
+    border: none;
+    border-bottom: 2px solid transparent;
+    font-size: 13px;
+    font-weight: 500;
+    min-width: 120px;
+}
+
+QTabBar::tab:hover {
+    background-color: #333333;
+    color: #BB86FC;
+}
+
+QTabBar::tab:selected {
+    color: #BB86FC;
+    background-color: #333333;
+    border-bottom: 2px solid #BB86FC;
+}
+
+/* Таблица */
+QTableWidget {
+    background-color: #2A2A2A;
+    color: rgba(255, 255, 255, 0.9);
+    gridline-color: rgba(255, 255, 255, 0.1);
+    border: none;
+    border-radius: 4px;
+}
+
+QTableWidget::item {
+    padding: 8px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* Стили для строк таблицы */
+QTableWidget::item:alternate {
+    background-color: #2D2D2D;
+}
+
+QTableWidget::item:hover {
+    background-color: rgba(187, 134, 252, 0.1);
+}
+
+QTableWidget::item:selected {
+    background-color: rgba(187, 134, 252, 0.15);
+    color: #BB86FC;
+}
+
+QHeaderView::section {
+    background-color: #333333;
+    color: rgba(255, 255, 255, 0.7);
+    padding: 8px;
+    border: none;
+    border-bottom: 1px solid rgba(187, 134, 252, 0.3);
+    font-weight: 500;
+}
+
+/* Текстовое поле */
+QTextEdit {
+    background-color: #2A2A2A;
+    color: rgba(255, 255, 255, 0.9);
+    border: none;
+    border-radius: 4px;
+    padding: 8px;
+    selection-background-color: rgba(187, 134, 252, 0.2);
+    selection-color: #BB86FC;
+}
+
+/* Метрики */
+QFrame#metricsFrame {
+    background-color: transparent;
+    padding: 16px;
+}
+
+QLabel#metricsTitle {
+    color: #BB86FC;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 16px;
+}
+
+QLabel#metricsSubtitle {
+    color: #BB86FC;
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 24px;
+    margin-bottom: 12px;
+}
+
+/* Подзаголовок метрик */
+QLabel#metricsSubheader {
+    color: #BB86FC;
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 24px;
+    margin-bottom: 12px;
+    padding-top: 16px;
+    border-top: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+/* Метрики ошибок */
+QLabel[class="errorMetricTitle"] {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 13px;
+    font-weight: normal;
+}
+
+QLabel[class="errorMetricValue"][type="total"] {
+    color: #BB86FC;  /* Фиолетовый для общего количества */
+    font-size: 24px;
+    font-weight: 600;
+    margin-left: 8px;
+}
+
+QLabel[class="errorMetricValue"][type="nullref"] {
+    color: #03DAC5;  /* Бирюзовый */
+    font-size: 16px;
+    font-weight: 500;
+    margin-left: 8px;
+}
+
+QLabel[class="errorMetricValue"][type="argument"] {
+    color: #CF6679;  /* Красный */
+    font-size: 16px;
+    font-weight: 500;
+    margin-left: 8px;
+}
+
+QLabel[class="errorMetricValue"][type="index"] {
+    color: #FFB74D;  /* Оранжевый */
+    font-size: 16px;
+    font-weight: 500;
+    margin-left: 8px;
+}
+
+QLabel[class="errorMetricValue"][type="missing"] {
+    color: #4FC3F7;  /* Голубой */
+    font-size: 16px;
+    font-weight: 500;
+    margin-left: 8px;
+}
+
+QLabel[class="errorMetricValue"][type="key"] {
+    color: #AED581;  /* Зеленый */
+    font-size: 16px;
+    font-weight: 500;
+    margin-left: 8px;
+}
+
+/* Прогресс бар для метрик */
+QProgressBar {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: none;
+    border-radius: 2px;
+    height: 4px;
+    text-align: right;
+    margin: 2px 0;
+}
+
+QProgressBar::chunk {
+    background-color: #BB86FC;
+    border-radius: 2px;
+}
+
+/* Компактные метрики ассетов */
+QFrame[class="buildMetric"] {
+    background-color: #2A2A2A;
+    border-radius: 4px;
+    padding: 6px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    min-width: 160px;
+    min-height: 60px;
+    margin: 2px;
+}
+
+QFrame[class="buildMetric"]:hover {
+    background-color: #333333;
+    border: 1px solid rgba(187, 134, 252, 0.3);
+}
+
+QLabel[class="metricTitle"] {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 11px;
+    font-weight: normal;
+    padding-bottom: 1px;
+}
+
+QLabel[class="metricValue"] {
+    color: #BB86FC;
+    font-size: 12px;
+    font-weight: 600;
+    margin-top: 2px;
+    padding: 1px 0;
+}
+
+/* Кнопки */
+QPushButton {
+    background-color: rgba(187, 134, 252, 0.1);
+    color: #BB86FC;
+    border: 1px solid rgba(187, 134, 252, 0.3);
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 13px;
+}
+
+QPushButton:hover {
+    background-color: rgba(187, 134, 252, 0.2);
+    border: 1px solid #BB86FC;
+}
+
+QPushButton:pressed {
+    background-color: rgba(187, 134, 252, 0.3);
+}
+
+/* Полосы прокрутки */
+QScrollBar:vertical {
+    background-color: #2A2A2A;
+    width: 8px;
+    margin: 0;
+}
+
+QScrollBar::handle:vertical {
+    background-color: rgba(187, 134, 252, 0.2);
+    min-height: 30px;
+    border-radius: 4px;
+}
+
+QScrollBar::handle:vertical:hover {
+    background-color: rgba(187, 134, 252, 0.3);
+}
+
+QScrollBar::add-line:vertical,
+QScrollBar::sub-line:vertical {
+    border: none;
+    background: none;
+}
+
+/* Стили для диаграммы */
+QChartView {
+    background-color: transparent;
+}
+
+/* Заголовки секций */
+QLabel[class="sectionTitle"] {
+    color: #BB86FC;
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 24px;
+    margin-bottom: 12px;
+    padding-top: 16px;
+    border-top: 1px solid rgba(255, 255, 255, 0.12);
+}
