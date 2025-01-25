@@ -1,0 +1,6 @@
+PyQt6>=6.4.0
+PyQt6-Charts>=6.4.0
+pytest>=7.0.0
+black>=22.0.0
+flake8>=4.0.0
+mypy>=0.950 

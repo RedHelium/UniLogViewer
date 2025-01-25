@@ -2,6 +2,9 @@
 
 A desktop application for viewing and analyzing Unity log files with a modern Material Design interface.
 
+![Unity Log Viewer](images/scr_1.png)
+![Unity Log Viewer](images/scr_2.png)
+
 ## Features
 
 - View and analyze Player and Editor logs
